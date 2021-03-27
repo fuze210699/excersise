@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Train+One&display=swap');
+::root{
+    --red--:red;
+    --orange--: orange;
+    --yellow--:yellow;
+    --green--:green;
+    --blue--:blue;
+    --gray--:gray;
+    --purple--:purple;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+*:not(i){
+    font-family: 'Oswald', sans-serif;
+}
+body{
+    font-size: 1.6rem;
+    line-height: 1.2;
+    font-weight: 600;
+}
+.container{
+    width: 1241px;
+    
+    margin: 0 auto;
+    min-height: 60vh;   
+    display: flex;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+}
+.my-item{
+    flex: 100%;
+    width: 100%;
+    background:blanchedalmond;
+    min-height: 100vh;
+}
+.title{
+    width: 100%;
+    position: relative;
+}
+.title h1{
+    display: block;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    text-align: center;
+}
+.bounce-element{
+    display: grid;
+    grid-template-columns:1fr;
+    /* grid-gap:0 20px; */
+    margin-top: 50px;
+}
+.bounce-element .item{
+    height: 300px;
+    cursor: pointer;
+    background-color: chocolate;
+    margin: 0 30%;
+}
+.color{
+    height: auto;
+    width: 80px;
+    color:black;
+    font-size: 200px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.title .timer{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    line-height: 75px;
+}
+.title .timer-ring{
+    height: 80px;
+    width: 80px;
+    border: 5px solid gray;
+    border-radius: 9999999px;
+    
+}
+.my-btn{
+    display: inline-block;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+.btn-start{
+    height: 40px;
+    width: 100px;
+    cursor: pointer;
+    background: no-repeat #fbfbfb;
+    padding: .28rem 1.2rem;
+    border: 2px solid #181818;
+    border-radius: 5px;
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    text-align: center;
+    transform-style: preserve-3d;
+    transform: translateZ(1rem);
+}
+.btn-start:hover{
+    background-color: #76b9f2;
+}
+.btn-start:after{
+    box-shadow: 10px 10px 0 10px transparent;
+    transition: all .15s;
+    transition-timing-function: ease-out;
+    border: inherit;
+    border-radius: inherit;
+    position: absolute;
+    display: inherit;
+    left: .12rem;
+    top: .12rem;
+    transform: translate(0);
+    content: "";
+    width: 100%;
+    height: 100%;
+    transform: translateZ(-.1rem);
+    background-color: #76b9f2;
+}
+.result{
+    width: 100%;
+    height: 40px;
+    background-color: bisque;
+}
+@media screen and (max-width:768px)
+{
+    .container{
+        width: 768px;
+    }
+    .title .timer-ring{
+        height: 60px;
+        width: 60px;
+        border: 5px solid gray;
+        border-radius: 9999999px;
+    }
+    .minute{
+        font-size: 15px;
+
+    }
+    .second{
+        font-size: 15px;
+    }
+    .khoangtrang{
+        font-size: 15px;
+    }
+    .title .timer{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        line-height: 55px;
+    }
+    .color{
+        height: auto;
+        width: 80px;
+        color:black;
+        font-size: 100px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    .title{
+        width: 100%;
+        position: relative;
+        font-size: 25px;
+    }
+    .bounce-element .item{
+        margin: 0 20%;
+    }
+}
+@media screen and (max-width:480px)
+{
+    .container{
+        width: 480px;
+    }
+    .title .timer-ring{
+        height: 60px;
+        width: 60px;
+        border: 5px solid gray;
+        border-radius: 9999999px;
+    }
+    .minute{
+        font-size: 15px;
+
+    }
+    .second{
+        font-size: 15px;
+    }
+    .khoangtrang{
+        font-size: 15px;
+    }
+    .title .timer{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        line-height: 55px;
+    }
+    .color{
+        height: auto;
+        width: 80px;
+        color:black;
+        font-size: 50px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    .title{
+        width: 100%;
+        position: relative;
+        font-size: 15px;
+    }
+    .bounce-element .item{
+        margin: 0 10%;
+    }
+}
+@media screen and (max-width:320px)
+{
+    .container{
+        width: 320px;
+    }
+    .title .timer-ring{
+        height: 60px;
+        width: 60px;
+        border: 5px solid gray;
+        border-radius: 9999999px;
+    }
+    .minute{
+        font-size: 15px;
+
+    }
+    .second{
+        font-size: 15px;
+    }
+    .khoangtrang{
+        font-size: 15px;
+    }
+    .title .timer{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        line-height: 55px;
+    }
+    .color{
+        height: auto;
+        width: 80px;
+        color:black;
+        font-size: 30px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    .title{
+        width: 100%;
+        font-size: 10px;
+    }
+    .bounce-element .item{
+        margin: 0 10%;
+    }
+}
+
+
