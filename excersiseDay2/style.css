@@ -148,6 +148,7 @@ a{
 		height: auto;
 		background-color: beige;
 		padding-bottom: 20px;
+		overflow: hidden;
 	}
 	.item-title{
 		font-size: 25px;
