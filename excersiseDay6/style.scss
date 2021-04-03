@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@300&display=swap');
+$bg-color: #ffefdb;
+$bg-content: #ecab53;
+* {
+    margin: 0;
+    padding: 0;
+    &:not(i) {
+        font-family: 'Source Serif Pro', serif;
+    }
+}
+
+body {
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-color: $bg-color;
+}
+
+.display-n {
+    display: none;
+}
+
+.display-b {
+    display: block;
+}
+
+.content {
+    width: 80%;
+    height: 100vh;
+    max-height: 100vh;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+    position: relative;
+    .first-p:first-letter {
+        float: left;
+        font-size: 50px;
+        margin-right: 2px;
+        line-height: .65;
+        color: #ff66cc;
+        margin-top: 8px;
+        // display: -webkit-box;
+        // -webkit-line-clamp: 2;
+        // -webkit-box-orient: vertical;
+        // overflow: hidden;
+        // text-overflow: ellipsis;
+        // word-break: break-word;
+    }
+    .bg-1 {
+        flex: 0 0 50%;
+        background-image: url(img/bg-img.jpg);
+        display: flex;
+        .inner {
+            justify-content: center;
+            margin: auto;
+            text-align: left;
+            align-items: center;
+            color: #fff;
+            padding: 0 15px;
+            h1 {
+                text-align: center;
+            }
+        }
+    }
+    .bg-2 {
+        flex: 0 0 50%;
+        background-image: url(img/bg-img.jpg);
+        position: relative;
+        .overlay {
+            position: relative;
+            /* Sit on top of the page content */
+            // display: none;
+            /* Hidden by default */
+            width: 100%;
+            /* Full width (cover the whole page) */
+            height: 100%;
+            /* Full height (cover the whole page) */
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: #000;
+            opacity: 0.3;
+            /* Black background with opacity */
+            z-index: 2;
+            /* Specify a stack order in case you're using a different order for other elements */
+            /* Add a pointer on hover */
+        }
+        .inner-c {
+            position: absolute;
+            top: 45%;
+            left: auto;
+            z-index: 1000;
+            color: #fff;
+            padding: 0 15px;
+            h1 {
+                text-align: center;
+            }
+            .turn {
+                height: 40px;
+                width: auto;
+                background-color: aqua;
+                color: black;
+                font-size: 15px;
+                border-radius: 10px;
+                display: inline-block;
+            }
+        }
+    }
+}
